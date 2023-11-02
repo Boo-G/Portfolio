@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at full_traffic_light.sv(207): always construct contains both blocking and non-blocking assignments File: G:/year 5/All Uni Files/CME341_LAB_6/full_traffic_light.sv Line: 207

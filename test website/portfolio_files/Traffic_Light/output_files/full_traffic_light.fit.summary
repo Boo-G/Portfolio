@@ -1,0 +1,16 @@
+Fitter Status : Failed - Thu Nov 02 14:42:47 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : full_traffic_light
+Top-level Entity Name : full_traffic_light
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 1,161 / 114,480 ( 1 % )
+    Total combinational functions : 801 / 114,480 ( < 1 % )
+    Dedicated logic registers : 847 / 114,480 ( < 1 % )
+Total registers : 847
+Total pins : 64 / 529 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 22,528 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
