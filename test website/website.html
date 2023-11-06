@@ -43,6 +43,46 @@
         height: 400px; width: 800px;  object-fit: fill;
       }
 
+      #about-section {
+          background: rgba(32, 33, 36, 0.1);
+          position: relative;
+      }
+
+      .blockabout {
+          padding: 20px;
+          background: white;
+      }
+
+      .blockabout-inner {
+          padding: 30px;
+          border: 1px solid rgba(32, 33, 36, 0.1);
+      }
+
+      .sosmed-horizontal a i {
+          border: 1px solid #070707;
+          border-radius: 50%;
+          color: #070707;
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          margin: auto 3px;
+          font-size: 15px;
+          text-align: center;
+          transition: all 0.3s;
+      }
+
+      .rey-btn {
+          border: 2px solid #070707;
+          padding: 10px 40px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 50px;
+          transition: all 0.3s;
+      }
+
 /* 
       .container {
         overflow-y: scroll;
@@ -71,6 +111,10 @@
         <symbol id="excel">
           <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM6.472 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .254.384c.07.049.154.087.25.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.625.625 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-2.945-3.358h-.893L1.81 13.37h-.036l-.832-1.438h-.93l1.227 1.983L0 15.931h.861l.853-1.415h.035l.85 1.415h.908L2.253 13.94l1.274-2.007Zm2.727 3.325H4.557v-3.325h-.79v4h2.487v-.675Z"/>
         </symbol>
+        <symbol id="resume">
+          <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+          <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </symbol>
       </svg>
 
     <header>
@@ -88,7 +132,7 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about-section">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,25 +153,30 @@
     <main class="my-5">
         <div class="container">
             <!-- Welcome row -->
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="Pictures/its me2.PNG" alt="" class="img-fluid">
+            <section id="about-section" class="pt-5 pb-5">
+              <div class="container wrapabout">
+                <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                        <img src="Pictures/its me2.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 blockabout blockabout-inner text-center text-sm-start">
+                        <h1 class="mt-5">Welcome to My Coding Portfolio!</h1>
+                        <p class="mt-4">My name is Bailey Giesbrecht, and I am a recent graduate in Computer Engineering from the University of Saskatchewan. 
+                          Feel free to look through some of the projects I have worked on, along with being able to download my code. 
+                          Be sure to click the button if you want to know more about me or like to check out my LinkedIn or Github.
+                        </p>
+                        <a href="#about-section" ><button type="button" class="btn btn-primary mt-3">About me</button></a>
+                        <a class="text-muted" href="portfolio_files/Bailey Giesbrecht Resume.pdf" target="_blank"><button type="button"class="btn btn-secondary mt-3">Download my resume</button></a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h1 class="mt-5">Welcome to My Coding Portfolio!</h1>
-                    <p class="mt-4">My name is Bailey Giesbrecht, and I am a recent graduate in Computer Engineering from the University of Saskatchewan. 
-                      Feel free to look through some of the projects I have worked on, along with being able to download my code. 
-                      Be sure to click the button if you want to know more about me or like to check out my LinkedIn or Github.
-                    </p>
-                    <button type="button" class="btn btn-primary mt-3">About me</button>
-                </div>
-            </div>
+              </div>
+            </section>
             <!-- Projects bar -->
             <div class="row">
                 <div class="col">
                     <div class="bg-secondary text-white my-3 py-3 card text-center">
                         <div class="card-body">
-                            Completed Projects
+                            <h3>Completed Projects</h3>
                         </div>
                     </div>
                 </div>
@@ -164,7 +213,7 @@
                 </div>   
             </div>
             <!-- Row 2 of projects -->
-            <div class="row">
+            <div class="row pt-3">
               <div class="col">
                   <div class="card-group ">
                       <div class="card" style="width: 18rem;">
@@ -199,7 +248,7 @@
                   <div class="col">
                       <div class="bg-secondary text-white my-3 py-3 card text-center">
                           <div class="card-body">
-                              Traffic Ligth Controller
+                              <h3>Traffic Ligth Controller</h3>
                           </div>
                       </div>
                   </div>
@@ -269,30 +318,34 @@
                   </div>
               </div>
               <!-- Traffic Light video/information -->
-              <div class="row">
-                <div class="col">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="videos/traffic_light.mp4" allowfullscreen></iframe>
-                  </div>
+              <section id="about-section" class="pt-5 pb-5">
+                <div class="container wrapabout">
+                  <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="videos/traffic_light.mp4" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="col-md-6 blockabout blockabout-inner text-center text-sm-start">
+                      <p class="description-p text-muted pe-0 pe-lg-0">For this project, there was a clear state diagram that was followed, which can be seen in the state diagram pictured above. 
+                        The goal was to create the logic of a traffic light, considering the standard functionality of a red, yellow, and green traffic light, 
+                        a left turn arrow if cars were waiting, and a pedestrian walk light stating when it was safe to walk or not. 
+                        Lighting up specific parts of the 7-segment display would show these features and can be found in the 7-segment picture above.
+                      </p>
+                        <p class="description-p text-muted pe-0 pe-lg-0">An example of the standard red, yellow, and green traffic lights is shown in the provided video. The video starts by showing 
+                          that our internal clock is at 8 seconds and is counting down. Once 0 seconds is reached, we will change states from our north and 
+                          southbound lights, going from a state of red to green. While the east and westbound lights need to change state from 
+                          green to yellow to red. The east and west lights will hold a state of yellow for 6 seconds before switching to red.  
+                          The north and south lights will continue to have a form of red until the east and westbound lights are red for 
+                          a full 2 seconds. Then, the north and southbound lights can change to green, as shown in the video and state diagram.
+                        </p>
+                      <a href="portfolio_files/Traffic_Light.zip">
+                        <button type="button" class="btn btn-secondary">Download</button>
+                      </a>
+                    </div>
+                  </div>    
                 </div>
-                <div class="col">
-                  <p class="mt-4">For this project, there was a clear state diagram that was followed, which can be seen in the state diagram pictured above. 
-                    The goal was to create the logic of a traffic light, considering the standard functionality of a red, yellow, and green traffic light, 
-                    a left turn arrow if cars were waiting, and a pedestrian walk light stating when it was safe to walk or not. 
-                    Lighting up specific parts of the 7-segment display would show these features and can be found in the 7-segment picture above.
-                  </p>
-                    <p class="mt-4">An example of the standard red, yellow, and green traffic lights is shown in the provided video. The video starts by showing 
-                      that our internal clock is at 8 seconds and is counting down. Once 0 seconds is reached, we will change states from our north and 
-                      southbound lights, going from a state of red to green. While the east and westbound lights need to change state from 
-                      green to yellow to red. The east and west lights will hold a state of yellow for 6 seconds before switching to red.  
-                      The north and south lights will continue to have a form of red until the east and westbound lights are red for 
-                      a full 2 seconds. Then, the north and southbound lights can change to green, as shown in the video and state diagram.
-                    </p>
-                  <a href="portfolio_files/Traffic_Light.zip">
-                    <button type="button" class="btn btn-secondary">Download</button>
-                  </a>
-                </div>
-              </div>        
+              </section>    
             </div>
             <div class="container">
               <!-- FRAM bar -->
@@ -300,7 +353,7 @@
                   <div class="col">
                       <div class="bg-secondary text-white my-3 py-3 card text-center">
                           <div class="card-body">
-                              FRAM with I2C Communication
+                              <h3>FRAM with I2C Communication</h3>
                           </div>
                       </div>
                   </div>
@@ -313,7 +366,6 @@
                             <li data-target="#carouselFRAM" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselFRAM" data-slide-to="1"></li>
                             <li data-target="#carouselFRAM" data-slide-to="2"></li>
-                            <li data-target="#carouselFRAM" data-slide-to="3"></li>
                           </ol>
                           <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -334,12 +386,6 @@
                                   <h5>I2C FRAM</h5>
                               </div>
                             </div>
-                            <div class="carousel-item">
-                              <img class="d-block w-100 fix-picture" src="Pictures/fram/FRAM_Values.PNG" alt="Fourth slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                  <h5>Temperature Values</h5>
-                              </div>
-                            </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselFRAM" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -353,26 +399,30 @@
                   </div>
               </div>
               <!-- FRAM video/information -->
-              <div class="row">
-                <div class="col-md-6">
-                    <img src="Pictures/fram/Temp-chart.PNG" alt="Error loading picture" class="img-fluid">
+              <section id="about-section" class="pt-5 pb-5">
+                <div class="container wrapabout">
+                  <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                        <img src="Pictures/fram/Temp-chart.PNG" alt="Error loading picture" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 blockabout blockabout-inner text-center text-sm-start">
+                        <p class="description-p text-muted pe-0 pe-lg-0">For this project, I was tasked with writing a few functions for a FRAM chip that communicates over I2C for our rocket.
+                          I was asked to write a function that would map out the 32KB of data on the FRAM chip and display it, as seen in the Memory Table picture.
+                          Along with a function to write multiple bytes and objects to the memory table.
+                        </p>
+                        <p class="description-p text-muted pe-0 pe-lg-0">I demonstrated these functions by wiring a temperature sensor to input data onto the memory table, as shown in the picture above.
+                          I then used this data to graph the temperature over time. During this graph, I touched the temperature sensor two times.
+                          We can see this through the two increases. The first one can be seen at 8 seconds, while the second time can be seen at 28 seconds. 
+                          If you want to check out the Excel file with all temperature values, click the small Excel logo next to the download button.
+                        </p>
+                        <a href="portfolio_files/FRAM.zip">
+                          <button type="button" class="btn btn-secondary">Download</button>
+                        </a>
+                        <a class="fs-2 mb-3" href="https://docs.google.com/spreadsheets/d/1fgqAfln46EzlRBoIz3RSHJErjd5InraVuVQhGqY809c/edit#gid=0" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#excel"/></svg></a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <p class="mt-4">For this project, I was tasked with writing a few functions for a FRAM chip that communicates over I2C for our rocket.
-                      I was asked to write a function that would map out the 32KB of data on the FRAM chip and display it, as seen in the Memory Table picture.
-                      Along with a function to write multiple bytes and objects to the memory table.
-                    </p>
-                    <p class="mt-4">I demonstrated these functions by wiring a temperature sensor to input data onto the memory table, as shown in the picture above.
-                      I then used this data to graph the temperature over time. During this graph, I touched the temperature sensor two times.
-                      We can see this through the two increases. The first one can be seen at 8 seconds, while the second time can be seen at 28 seconds. 
-                      If you want to check out the Excel file with all temperature values, click the small Excel logo next to the download button.
-                    </p>
-                    <a href="portfolio_files/FRAM.zip">
-                      <button type="button" class="btn btn-secondary">Download</button>
-                    </a>
-                    <a class="fs-2 mb-3" href="https://docs.google.com/spreadsheets/d/1fgqAfln46EzlRBoIz3RSHJErjd5InraVuVQhGqY809c/edit#gid=0" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#excel"/></svg></a>
-                </div>
-              </div>
+              </section>
             </div>
             <div class="container">
               <!-- Parking Sensor bar -->
@@ -380,7 +430,7 @@
                   <div class="col">
                       <div class="bg-secondary text-white my-3 py-3 card text-center">
                           <div class="card-body">
-                              Raspberry Pi Parking Sensor
+                              <h3>Raspberry Pi Parking Sensor</h3>
                           </div>
                       </div>
                   </div>
@@ -426,27 +476,76 @@
                   </div>
               </div>
               <!-- Parking Sensor video/information -->
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="videos/Parking_sensor.mp4" allowfullscreen></iframe>
+              <section id="about-section" class="pt-5 pb-5">
+                <div class="container wrapabout">
+                  <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0 ">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="videos/Parking_sensor.mp4" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="col-md-6 blockabout blockabout-inner text-center text-sm-start">
+                        <p class="description-p text-muted pe-0 pe-lg-0">For this project, I made a GUI for a parking lot. The project ran on my computer and also on a Raspberry Pi. In the GUI, we can see 
+                          it has five parking lot indicators. Lot 1, for example, has a green background, meaning there is one parking spot available, as indicated by the one within the box.
+                          On the other hand, lot 2 has a red background. This means there is already a car parked there with zero spots available. 
+                          The state of the lot will change based on the pressure sensor value that will then be transmitted to the computer and shown on the GUI using a publisher and subscriber method that communicates over MQTT.
+                        </p>
+                        <p class="description-p text-muted pe-0 pe-lg-0">The video demonstration shows the feedback of the circuit connected to the Raspberry Pi and the GUI running on the computer. 
+                          Due to not having a pressure sensor, this is simulated with me moving the GPIO pins for a specific lot location from ground to VDD. 
+                          It simulates that a vehicle would have parked on top of this pressure sensor and returned a high input value, which will change to a red lot with zero spots available to show that.
+                        </p>
+                        <a href="portfolio_files/Parking-sensor.zip">
+                          <button type="button" class="btn btn-secondary">Download</button>
+                        </a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                    <p class="mt-4">For this project, I made a GUI for a parking lot. The project ran on my computer and also on a Raspberry Pi. In the GUI, we can see 
-                      it has five parking lot indicators. Lot 1, for example, has a green background, meaning there is one parking spot available, as indicated by the one within the box.
-                      On the other hand, lot 2 has a red background. This means there is already a car parked there with zero spots available. 
-                      The state of the lot will change based on the pressure sensor value that will then be transmitted to the computer and shown on the GUI using a publisher and subscriber method that communicates over MQTT.
-                    </p>
-                    <p class="mt-4">The video demonstration shows the feedback of the circuit connected to the Raspberry Pi and the GUI running on the computer. 
-                      Due to not having a pressure sensor, this is simulated with me moving the GPIO pins for a specific lot location from ground to VDD. 
-                      It simulates that a vehicle would have parked on top of this pressure sensor and returned a high input value, which will change to a red lot with zero spots available to show that.
-                    </p>
-                    <a href="portfolio_files/Parking-sensor.zip">
-                      <button type="button" class="btn btn-secondary">Download</button>
-                    </a>
+              </section>
+              <!-- About section bar -->
+              <div class="row">
+                <div class="col">
+                    <div class="bg-secondary text-white my-3 py-3 card text-center">
+                        <div class="card-body">
+                            About Me
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+              <!-- About section -->
+              <section id="about-section" class="pt-5 pb-5">
+                <div class="container wrapabout">
+                    <div class="red"></div>
+                    <div class="row">
+                        <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                            <div class="blockabout">
+                                <div class="blockabout-inner text-center text-sm-start">
+                                    <div class="title-big pb-3 mb-3">
+                                        <h3>ABOUT ME</h3>
+                                    </div>
+                                    <p class="description-p text-muted pe-0 pe-lg-0">
+                                      I am a 2023 graduate in Computer—Engineering from the University of Saskatchewan. My favorite projects involve creativity through design or ideas while working with a team. I enjoy working with IoT ideas and learning how to code games or websites.
+                                    </p>
+                                    <p class="description-p text-muted pe-0 pe-lg-0">
+                                      In my spare time, I enjoy getting together with friends to play sports such as Volleyball, Badminton or Disc Golf. Or have the occasional board game night.
+                                    </p>
+                                    <p class="description-p text-muted pe-0 pe-lg-0">Feel free to check out my LinkedIn, GitHub, or resume by clicking the corresponding images below!.</p>
+                                    <div class="sosmed-horizontal pt-3 pb-3">
+                                      <a class="text-muted" href="https://www.linkedin.com/in/bailey-giesbrecht-898221225/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a>
+                                      <a class="text-muted" href="https://github.com/Boo-G" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a>
+                                      <a class="text-muted" href="portfolio_files/Bailey Giesbrecht Resume.pdf" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#resume"/></svg></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <figure class="potoaboutwrap">
+                                <img class="fix-picture" src="Pictures/its me.PNG" width="450" height="700" alt="About picture error" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
               </div>
         </div>
     </main>
